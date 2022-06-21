@@ -13,3 +13,9 @@ body {
 .input-group {
     width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+    .input-group {
+        width: 85%;
+    }
+}
