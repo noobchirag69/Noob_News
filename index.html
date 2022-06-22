@@ -22,59 +22,21 @@
     </nav>
 
     <div class="input-group mb-5 mt-5 mx-auto">
-        <input type="text" class="form-control" placeholder="Search for a topic" aria-describedby="basic-addon2">
+        <input type="text" id="keyword" class="form-control" placeholder="Search for a topic">
         <div class="input-group-append">
-            <button class="btn btn-dark" type="button">Search</button>
+            <button id="search" class="btn btn-dark" onclick="getNews()">Search</button>
         </div>
     </div>
-
 
     <div class="container">
-        <div class="card m-3">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img class="img-fluid rounded-start">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-dark">Read More</a>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card m-3">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img class="img-fluid rounded-start">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-dark">Read More</a>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+        <div class="posts">
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom JavaScript -->
     <script src="code.js"></script>
 </body>
