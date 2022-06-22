@@ -18,7 +18,7 @@ fetch(url)
                                         <h5 class="card-title">${data.results[i].title}</h5>
                                         <p class="card-text">${data.results[i].abstract}</p>
                                         <p class="source">Source: The New York Times</p>
-                                        <a href="${data.results[i].url}" target="_blank" class="btn btn-sm btn-dark">Read More</a>
+                                        <a href="${data.results[i].url}" target="_blank" class="btn btn-dark">Read More</a>
                                     </div>
                                 </div>
                             </div>
