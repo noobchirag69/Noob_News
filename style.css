@@ -2,7 +2,10 @@ body {
     background-color: #eee;
 }
 
-.card, .btn, input, nav {
+.card,
+.btn,
+input,
+nav {
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
 
@@ -12,6 +15,14 @@ body {
 
 .input-group {
     width: 50%;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.source {
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 600px) {
