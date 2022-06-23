@@ -35,7 +35,11 @@ function getNews() {
     $('.posts').text("");
     let keyword = $('#keyword').val();
     const search_url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${keyword}&api-key=${apiKey}`;
-    fetch(search_url)
+    if (keyword == '') {
+        alert("Please input something!");
+        defaultNews();
+    } else {
+        fetch(search_url)
         .then(response => {
             return response.json();
         })
@@ -59,4 +63,5 @@ function getNews() {
                 $('.posts').append(html);
             }
         })
+    }
 }
