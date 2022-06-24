@@ -10,7 +10,7 @@ function defaultNews() {
             return response.json();
         })
         .then(data => {
-            for (i = 2; i < data.results.length; i++) {
+            for (i = 1; i < data.results.length; i++) {
                 let html = `<div class="card m-3">
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center">
@@ -20,7 +20,7 @@ function defaultNews() {
                                     <div class="card-body">
                                         <h5 class="card-title">${data.results[i].title}</h5>
                                         <p class="card-text">${data.results[i].abstract}</p>
-                                        <p class="source">Source: The New York Times</p>
+                                        <p class="source">Source: The New York Times - ${data.results[i].byline}</p>
                                         <a href="${data.results[i].url}" target="_blank" class="btn btn-dark btn-sm">Read More</a>
                                     </div>
                                 </div>
@@ -52,9 +52,9 @@ function getNews() {
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">${data.response.docs[i].snippet}</h5>
-                                            <p class="card-text">${data.response.docs[i].lead_paragraph}</p>
-                                            <p class="source">Source: The New York Times</p>
+                                            <h5 class="card-title">${data.response.docs[i].headline.main}</h5>
+                                            <p class="card-text">${data.response.docs[i].snippet}</p>
+                                            <p class="source">Source: The New York Times - ${data.response.docs[i].byline.original}</p>
                                             <a href="${data.response.docs[i].web_url}" target="_blank" class="btn btn-dark btn-sm">Read More</a>
                                         </div>
                                     </div>
