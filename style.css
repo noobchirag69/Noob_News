@@ -14,7 +14,7 @@ nav {
 }
 
 .input-group {
-    width: 50%;
+    width: 25%;
 }
 
 .card-text {
@@ -25,8 +25,14 @@ nav {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .input-group {
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .input-group {
-        width: 85%;
+        width: 70%;
     }
 }
